@@ -34,7 +34,7 @@ Just save all .rasi files at `~/.config/rofi/themes/` and edit your `~/.config/r
 
 ## Important!
 
-Find and edit the lines below before use these themes to fit your system fonts and icon theme:
+Please, find and edit the lines below before use these themes to fit your system fonts and icon theme:
 
 ```
 drun-icon-theme: "Numix-Circle";
