@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+ROOT_PATH=$HOME
+
+if [[ -z "$@" ]]; then
+    find $ROOT_PATH -type d | sed 's|^'$ROOT_PATH/'||'
+else
+    xdg-open "$@" &>/dev/null &
+fi
+
+exit 0

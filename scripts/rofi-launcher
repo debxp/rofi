@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+
+rofi -modi "drun,Find:$HOME/.local/bin/rofi-modi-find,window" \
+     -show drun -sort -i -disable-history -drun-match-fields "name" -sidebar-mode
+
+
+exit 0
