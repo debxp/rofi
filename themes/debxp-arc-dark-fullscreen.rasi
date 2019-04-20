@@ -12,25 +12,25 @@ configuration {
                      
     modi:            "drun,window,run";
     display-drun:    "Run";
-    display-window:  "Window";
+    display-window:  "Task";
     display-run:     "Command";
                      
-    sidebar-mode:    false;
-    fullscreen:      false;
+    sidebar-mode:    true;
+    fullscreen:      true;
 }
 * {
-    font-generic: "Open Sans 11";
-    font-button:  "Open Sans 10";
-    font-prompt:  "Open Sans Semibold 12";
+    font-generic: "Open Sans 13";
+    font-button:  "Open Sans 11";
+    font-prompt:  "Open Sans Semibold 14";
     
     font: @font-generic;
     
     spacing: 0;
     
-    text-color:                  #E7E8EB;
-    background-color:            #383c4a99;
-    lightbg:                     #8c919c99;
-    mediumbg:                    #4c515c99;
+    text-color:                  #97989B;
+    background-color:            #181c2aee;
+    lightbg:                     #4c515c99;
+    mediumbg:                    #2c313c99;
     
     red:                         #C64E44;
     lightred:                    #ff7c7c;
@@ -38,8 +38,8 @@ configuration {
     blue:                        #5294E2; 
     lightblue:                   #92d4f2; 
     
-    bordercolor:                 @text-color;
-    separatorcolor:              @orange;
+    bordercolor:                 @lightbg;
+    separatorcolor:              @lightbg;
     
     foreground:                  @text-color;
     background:                  @background-color;
@@ -47,7 +47,7 @@ configuration {
     normal-foreground:           @text-color;
     normal-background:           @background-color;
     
-    active-foreground:           @lightblue;
+    active-foreground:           @blue;
     active-background:           @background-color;
     
     urgent-foreground:           @red;
@@ -56,10 +56,10 @@ configuration {
     selected-normal-foreground:  @text-color;
     selected-normal-background:  @lightbg;
     
-    selected-active-foreground:  @lightblue;
+    selected-active-foreground:  @blue;
     selected-active-background:  @lightbg;
     
-    selected-urgent-foreground:  @lightred;
+    selected-urgent-foreground:  @red;
     selected-urgent-background:  @lighbg;
     
     alternate-normal-foreground: @text-color;
@@ -74,16 +74,15 @@ configuration {
 #window {
     anchor:   north;
     location: center;
-    width:    40%;
-    y-offset: -20%;
-    padding:  0px;
-    border:   1px;
+    padding:  25% 30%;
+    border:   0px;
     border-color: @lightbg; 
+    background-color: @background-color;
 }
 #mainbox {
     border:  0px;
     padding: 0px;
-    background-color: @normal-background;
+    background-color: transparent;
 }
 #message {
     border:     0;
@@ -92,7 +91,7 @@ configuration {
 }
 #textbox {
     text-color: @foreground;
-    background-color: @normal-background;
+    background-color: transparent;
 }
 #listview {
     fixed-height: false;
@@ -100,7 +99,7 @@ configuration {
     border:       0;
     padding:      0;
     text-color:   @separatorcolor;
-    background-color: @normal-background;
+    background-color: transparent;
 }
 #element {
     border: 0;
@@ -145,10 +144,11 @@ configuration {
 }
 #sidebar {
     padding: 0px;
+    background-color:transparent;
 }
 #button {
     padding:      5px;
-    border:       1px 1px 0px 1px;
+    border:       1px;
     border-color: @lightbg;
     text-color:   @selected-normal-foreground;
     font:         @font-button;
@@ -168,12 +168,15 @@ configuration {
     spacing: 0;
     border: 0px 0px 1px 0px;
     border-color: @lightbg;
+    margin:0px 0px 5px 0px;
+    background-color: transparent;
 }
 
 #prompt {
     padding:5px 0px 5px 10px;
     text-color:@blue;
     font: @font-prompt;
+    background-color: transparent;
 }
 #textbox-prompt-colon {
     expand:     false;
@@ -182,13 +185,16 @@ configuration {
     padding:5px 5px 5px 0px;
     font: @font-prompt;
     text-color: @blue;
+    background-color: transparent;
 }
 #entry {
     padding:5px;
+    background-color: transparent;
 }
 #case-indicator {
     padding:5px;
     text-color:@blue;
     font: @font-prompt;
+    background-color: transparent;
 }
 
