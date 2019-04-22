@@ -16,6 +16,10 @@ Just save all .rasi files at `~/.config/rofi/themes/` and edit your `~/.config/r
 
 ![](screenshots/debxp-arc-dark-center.png)
 
+**debxp-arc-dark-center-rounded.rasi**
+
+![](screenshots/debxp-arc-dark-center-rounded.png)
+
 **debxp-arc-dark-fullscreen.rasi**
 
 ![](screenshots/debxp-arc-dark-fullscreen.png)
