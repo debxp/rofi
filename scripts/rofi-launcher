@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-# Edit this to fit your preferences.
-MODI_FIND_PATH="$HOME/.local/bin/rofi-modi-find"
+modis=" \
+Find:$HOME/.local/bin/rofi-modi-find, \
+Web search:$HOME/.local/bin/rofi-modi-websearch \
+"
 
-rofi -modi "drun,Find:$MODI_FIND_PATH,window" \
+rofi -modi "drun,$modis,window" \
      -show drun -sort -i -disable-history -drun-match-fields "name" -sidebar-mode
 
 
