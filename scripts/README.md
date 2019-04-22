@@ -12,4 +12,16 @@ Script called by ``rofi-launcher`` to find folders. With rofi running, use ``Ctr
 
 ## rofi-find
 
-Standalone version of ``rofi-modi-find``. Can be assigned directly to a shortcut key.
+Standalone version of ``rofi-modi-find``, so it can be assigned directly to a shortcut key.
+
+## rofi-modi-websearch
+
+Script called by ``rofi-finder`` to perform web searches.
+
+    **Important!** Requires the file ``rofi-websearch-sources`` to work.
+
+## rofi-websearch
+
+Standalone version of ``rofi-modi-websearch``, so it can be assigned directly to a shortcut key.
+
+    **Important!** Requires the file ``rofi-websearch-sources`` to work.
