@@ -28,8 +28,9 @@ configuration {
     spacing: 0;
     
     text-color:                  #E7E8EB;
-    background-color:            #383c4a99;
-    mediumbg:                    #4c515c99;
+    background-color:            #18192088;
+    lightbg:                     #38394099;
+    mediumbg:                    #28293099;
     
     red:                         #C64E44;
     lightred:                    #ff7c7c;
@@ -71,13 +72,14 @@ configuration {
     alternate-urgent-background: @background-color;
 }
 #window {
-    anchor:   south;
-    location: south;
-    width:    100%;
+    anchor:   north;
+    location: center;
+    width:    40%;
+    y-offset: -20%;
     padding:  0px;
-    border:   1px 0px 0px 0px;
+    border:   2px;
     border-color: @lightbg; 
-    children: [sidebar, listview, inputbar];
+    border-radius: 4px;
 }
 #mainbox {
     border:  0px;
@@ -146,11 +148,11 @@ configuration {
     padding: 0px;
 }
 #button {
-    padding: 5px;
-    border: 0px 1px 1px 1px;
+    padding:      5px;
+    border:       1px 1px 0px 1px;
     border-color: @lightbg;
-    text-color: @selected-normal-foreground;
-    font: @font-button;
+    text-color:   @selected-normal-foreground;
+    font:         @font-button;
 }
 #button.selected {
     background-color: @mediumbg;
@@ -165,7 +167,7 @@ configuration {
 
 #inputbar {
     spacing: 0;
-    border: 1px 0px 0px 0px;
+    border: 0px 0px 1px 0px;
     border-color: @lightbg;
 }
 
